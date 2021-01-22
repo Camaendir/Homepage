@@ -218,7 +218,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; camaendir.de 2020</span>
+                <span class="copyright">Copyright &copy; camaendir.de <span id="copyright-year"></span></span>
             </div>
             <div class="col-md-4">
             </div>
@@ -233,6 +233,13 @@
         </div>
     </div>
 </footer>
+
+<!-- updating copright year dynamicall -->
+<script>
+    var currentYear = new Date().toISOString().substring(0, 4);
+    document.getElementById("copyright-year").innerText = currentYear;
+</script>
+
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
 
